@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
+import Slider from '../components/slider.js'
+
 import styles from '@/styles/about.module.css'
 
 function About() {
@@ -19,8 +21,8 @@ function About() {
                 <Typography variant="button" className={styles.ctaText}>LEARN MORE</Typography>
               </div>
           </div>
-          <Container className={styles.aboutimage}>
-
+          <Container className={styles.aboutImage}>
+            <Slider />
           </Container>
         </div>
       </div>
