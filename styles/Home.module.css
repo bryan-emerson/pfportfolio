@@ -1,9 +1,7 @@
 .home {
-/* align-items: flex-start; */
 background-color: #ffffff;
 /* border: 1px none; */
 display: flex;
 flex-direction: column;
-/* position: relative; */
-/* border: 3px solid red; */
+/* border: 1px solid black; */
 }

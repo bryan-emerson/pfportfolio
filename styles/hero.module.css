@@ -1,0 +1,78 @@
+.heroPhoto {
+
+}
+
+.heroBox {
+  height: 100vw;
+  width: 100vw
+}
+
+.back {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  /* border: 2px solid salmon; */
+  background-attachment: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.heroWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.heroContent {
+  margin-top: 17em;
+  margin-right: 20rem;
+  width: 40%;
+  height: 100%;
+  /* border: 2px solid yellow; */
+  position: relative;
+  color: #ffffff;
+}
+
+.eyebrow {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.body {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cta {
+  border: 5px solid black;
+  border-radius: 50px;
+  width:74px;
+  height: 14px;
+
+}
+
+.label {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ height: 1.7rem;
+ width: 7rem;
+ background-color: #161616;
+ border-radius: 50px;
+ margin-top: 10px;
+}
+
+.ctaText {
+  color: #ffffff;
+}
