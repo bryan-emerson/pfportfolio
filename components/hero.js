@@ -4,6 +4,8 @@ import Container from '@mui/material/Container';
 
 import heroPhoto from '../public/heroPhoto.jpg'
 import heroDark from '../public/heroDark.jpg'
+import darkHero from '../public/darkHero.jpg'
+import newHero from '../public/newHero.jpg'
 
 import styles from '@/styles/hero.module.css'
 
@@ -13,7 +15,7 @@ function Hero() {
       <div className={styles.heroWrapper}>
         <Container maxWidth='xl'>
           <div className={styles.back} style={{
-            backgroundImage: `url('${heroDark.src}')`,
+            backgroundImage: `url('${newHero.src}')`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             zIndex: 0
@@ -23,8 +25,8 @@ function Hero() {
           <Typography variant="caption" gutterBottom className={styles.eyebrow}>
             My Name Is Bryan Emerson
           </Typography>
-          <Typography variant="h1" className={styles.title}>I&apos;m  a Frontend Developer</Typography>
-          <Typography variant="body1" className={styles.body}>I Strive to make simple, bold, user friendly solutions.</Typography>
+          <Typography variant="h1" className={styles.title}>I&apos;m  a Frontend Ecomm react Developer</Typography>
+          <Typography variant="body1" className={styles.body}>I strive to make bold, simple, user friendly solutions with React and javascript.</Typography>
           <div className={styles.label}>
           <Typography variant="button" className={styles.ctaText}>VIEW WORK</Typography>
           </div>
@@ -35,3 +37,6 @@ function Hero() {
 }
 
 export default Hero;
+
+
+//need to find proper placement for header content then need to make about section
