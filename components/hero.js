@@ -25,7 +25,7 @@ function Hero() {
           <Typography variant="caption" gutterBottom className={styles.eyebrow}>
             My Name Is Bryan Emerson
           </Typography>
-          <Typography variant="h1" className={styles.title}>I&apos;m  a Frontend Ecomm react Developer</Typography>
+          <Typography variant="h1" className={styles.title}>I&apos;m a Frontend Developer</Typography>
           <Typography variant="body1" className={styles.body}>I strive to make bold, simple, user friendly solutions with React and javascript.</Typography>
           <div className={styles.label}>
           <Typography variant="button" className={styles.ctaText}>VIEW WORK</Typography>
@@ -39,4 +39,4 @@ function Hero() {
 export default Hero;
 
 
-//need to find proper placement for header content then need to make about section
+//i think crop is good on photo now and hero content placed properly. need to make about section
