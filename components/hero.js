@@ -18,7 +18,7 @@ function Hero() {
             backgroundImage: `url('${newHero.src}')`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
-            zIndex: 0
+            zIndex: 1
           }} />
         </Container>
         <div className={styles.heroContent}>
@@ -26,9 +26,9 @@ function Hero() {
             My Name Is Bryan Emerson
           </Typography>
           <Typography variant="h1" className={styles.title}>I&apos;m a Frontend Developer</Typography>
-          <Typography variant="body1" className={styles.body}>I strive to make bold, simple, user friendly solutions with React and javascript.</Typography>
+          <Typography variant="body1" className={styles.body}>I strive to make bold, simple, user friendly solutions with React and javascript. </Typography>
           <div className={styles.label}>
-          <Typography variant="button" className={styles.ctaText}>VIEW WORK</Typography>
+            <Typography variant="button" className={styles.ctaText}>VIEW WORK</Typography>
           </div>
         </div>
       </div>
@@ -40,3 +40,8 @@ export default Hero;
 
 
 //i think crop is good on photo now and hero content placed properly. need to make about section
+        //   <Image
+        //   className={styles.back}
+        //   src={newHero}
+        //   alt='portrait of Bryan outdoors'
+        // />
