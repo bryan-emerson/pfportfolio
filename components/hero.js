@@ -14,12 +14,15 @@ function Hero() {
     <>
       <div className={styles.heroWrapper}>
         <Container maxWidth='xl'>
-          <div className={styles.back} style={{
-            backgroundImage: `url('${newHero.src}')`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            zIndex: 1
-          }} />
+        <Image
+          className={styles.back}
+          src={newHero}
+          alt='portrait of Bryan outdoors'
+          layout='fill'
+          objectFit='cover'
+          objectPosition='cover'
+          priority='true'
+        />
         </Container>
         <div className={styles.heroContent}>
           <Typography variant="caption" gutterBottom className={styles.eyebrow}>
@@ -45,3 +48,11 @@ export default Hero;
         //   src={newHero}
         //   alt='portrait of Bryan outdoors'
         // />
+
+
+        // <div className={styles.back} style={{
+        //   backgroundImage: `url('${newHero.src}')`,
+        //   backgroundRepeat: 'no-repeat',
+        //   backgroundSize: 'cover',
+        //   zIndex: 1
+        // }} />

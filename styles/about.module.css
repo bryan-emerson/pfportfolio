@@ -1,5 +1,60 @@
 .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100;
   min-height: 510px;
   background-color: #ffffff;
+  border: 2px solid red;
+  margin-top: 16rem;
 }
+
+.contentWrapper {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border: 1px solid green;
+  height: fit-content;
+  width: 100%;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  border: 1px solid orange;
+  height: fit-content;
+  /* width: fit-content; */
+  width: 5rem;
+  margin-left: 100px;
+}
+
+.aboutimage {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  border: 1px solid purple;
+  height: 5rem;
+  width: 10rem;
+}
+
+.h2 {
+  font-size: 1.5rem;
+}
+
+.label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 2.2rem;
+  width: 7rem;
+  background-color: #161616;
+  border-radius: 50px;
+  margin-top: 10px;
+ }
+
+ .ctaText {
+   color: #ffffff;
+ }
