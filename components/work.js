@@ -2,6 +2,8 @@ import Typography from '@mui/material/Typography';
 
 import styles from '@/styles/work.module.css'
 
+import Card from '../components/card.js'
+
 import Portfolio from '../public/placeholder.jpg'
 import ToDoList from '../public/placeholder.jpg'
 import Weather from '../public/placeholder.jpg'
@@ -17,6 +19,7 @@ import GameOfWar from '../public/placeholder.jpg'
 
 function Work() {
 
+  console.log("hello world")
   let projects = [
     {
       name: 'Old Portfolio App',
@@ -93,7 +96,7 @@ function Work() {
   const getAllProj = (array, index) => {
     let tempArr = [];
     for (let i = 0; i < array.length; i++) {
-      tempArr.push(<ProjectCard projObj={array[i]} key={i} />)
+      tempArr.push(<Card projObj={array[i]} key={i} />)
     }
     return tempArr;
   }
@@ -120,7 +123,7 @@ function Work() {
             </Typography>
           </div>
           <div className={styles.cardContainer}>
-
+            {allProjects}
           </div>
         </div>
       </div>
