@@ -1,0 +1,10 @@
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100;
+  min-height: 510px;
+  background-color: #f7f7f7;
+  border: 2px solid red;
+}

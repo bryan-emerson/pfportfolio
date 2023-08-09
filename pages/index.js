@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 import Navbar from '../components/nav.js'
 import Hero from '../components/hero.js'
 import About from '../components/about.js'
+import Work from '../components/work.js'
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar/>
       <Hero />
       <About />
+      <Work />
     </div>
     </>
   )
