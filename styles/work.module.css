@@ -46,6 +46,7 @@
 .cardContainer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   /* width: 100%; */
   border: 2px solid pink;
   /* margin: 0px 100px 0px 100px; */
