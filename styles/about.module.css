@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  /* border: 1px solid green; */
+  border: 1px solid green;
   height: fit-content;
   width: 100%;
 }
@@ -23,10 +23,10 @@
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
-  /* border: 1px solid orange; */
+  border: 1px solid orange;
   height: fit-content;
   /* width: fit-content; */
-  width: 5rem;
+  /* width: 5rem; */
   margin-left: 100px;
 }
 
@@ -42,6 +42,11 @@
 
 .h2 {
   font-size: 1.5rem;
+}
+
+.subtitle {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .label {

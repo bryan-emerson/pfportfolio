@@ -15,7 +15,7 @@ function About() {
               <Typography variant="h2" gutterBottom className={styles.h2}>
                 ABOUT
               </Typography>
-              <Typography variant="h1" className={styles.title}>I&apos;m a Frontend Developer</Typography>
+              <Typography variant="subtitle2" className={styles.subtitle}>I&apos;m a Frontend Developer</Typography>
               <Typography variant="body1" className={styles.body}>I strive to make bold, simple, user friendly solutions with React and javascript. </Typography>
               <div className={styles.label}>
                 <Typography variant="button" className={styles.ctaText}>LEARN MORE</Typography>
