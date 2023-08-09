@@ -43,3 +43,5 @@ const Slider = () => {
 }
 
 export default Slider
+
+//slider implemented next need to creat jump link for about section and start on work section
