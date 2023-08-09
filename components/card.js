@@ -22,4 +22,4 @@ function Card(props) {
 
 export default Card;
 
-//building out card to render in work section. currently wireframing card, need to locate props and render proj data on screen. card data gets mapped through and a card is rendered for each card
+//building out card to render in work section. currently wireframing card, need to locate props and render proj data on screen. card data gets mapped through and a card is rendered for each card. I fixed overflow/scroll issue by setting height of .work div in work.js to a fixed pixel height but im not sure if i like this solution...
