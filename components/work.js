@@ -20,6 +20,9 @@ function Work() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </Typography>
           </div>
+          <div className={styles.cardContainer}>
+
+          </div>
         </div>
       </div>
     </>

@@ -42,3 +42,13 @@
   font-weight: bold;
   width: 100%;
 }
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  /* width: 100%; */
+  border: 2px solid pink;
+  /* margin: 0px 100px 0px 100px; */
+  margin-left: 100px;
+  margin-right: 100px;
+}
