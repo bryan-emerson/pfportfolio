@@ -3,7 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   flex-basis: 40%;
-  height: 10rem;
+  height: fit-content;
   /* width: 10rem; */
   border: 2px solid purple;
   margin-bottom: 40px;

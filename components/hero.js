@@ -13,17 +13,17 @@ function Hero() {
   return (
     <>
       <div className={styles.heroWrapper}>
-        <Container maxWidth='xl'>
+
         <Image
           className={styles.back}
           src={newHero}
           alt='portrait of Bryan outdoors'
-          layout='fill'
+          fill
           objectFit='cover'
           objectPosition='cover'
-          priority='true'
+          priority
         />
-        </Container>
+
         <div className={styles.heroContent}>
           <Typography variant="caption" gutterBottom className={styles.eyebrow}>
             My Name Is Bryan Emerson
