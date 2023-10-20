@@ -13,7 +13,7 @@ function About() {
         <div className={styles.contentWrapper}>
           <div className={styles.aboutContent}>
               <Typography variant="h2" gutterBottom className={styles.h2}>
-                ABOUT
+                ABOUTz
               </Typography>
               <Typography variant="subtitle2" className={styles.subtitle}>I&apos;m a Frontend Developer</Typography>
               <Typography variant="body1" className={styles.body}>I strive to make bold, simple, user friendly solutions with React and javascript. </Typography>
