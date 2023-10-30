@@ -20,6 +20,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
+  padding-top: 3rem;
 }
 
 .title {
@@ -55,4 +56,8 @@
   /* margin: 0px 100px 0px 100px; */
   margin-left: 100px;
   margin-right: 100px;
+}
+
+.body {
+  margin-bottom: 3rem;
 }

@@ -9,13 +9,14 @@ function Card(props) {
   return (
     <>
     <div className={styles.card}>
-      <Container maxWidth='xl'>
-        <Image
-          alt="screenshot of app"
-          src={props.projObj.image}
-        />
-      </Container>
-      <Typography variant="h2">
+
+      <Image src={props.projObj.image} alt="screenshot of app" width={600} height={356} disableGutters={true} />
+
+
+      <Typography>
+        {props.projObj.stack}
+      </Typography>
+      <Typography variant="h4">
         {props.projObj.name}
       </Typography>
       <Typography>
