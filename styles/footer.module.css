@@ -1,4 +1,5 @@
 .footer {
+  color: #FFFFFF;
   display: flex;
   flex-direction: row;
   height: 12rem;
@@ -10,8 +11,10 @@
 .left {
   display: flex;
   flex-direction: column;
-  background-color: red;
+  background-color: #161616;
   flex-grow: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 .right {
@@ -19,4 +22,26 @@
   flex-direction: row;
   background-color: purple;
   flex-grow: 3;
+}
+
+.a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.a.active {
+  background-color: #04AA6D;
+  color: white;
 }

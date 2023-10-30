@@ -9,10 +9,7 @@ function Card(props) {
   return (
     <>
     <div className={styles.card}>
-
       <Image src={props.projObj.image} alt="screenshot of app" width={600} height={356} disableGutters={true} />
-
-
       <Typography>
         {props.projObj.stack}
       </Typography>
