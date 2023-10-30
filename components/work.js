@@ -22,14 +22,6 @@ function Work() {
   console.log("hello world")
   let projects = [
     {
-      name: 'Old Portfolio App',
-      info: 'This webpage is a React App showcasing my abilities to potential employers. Project cards on the projects page are programmatically created from an array of objects containing relevant data. The cards are then conditionally rendered based to the data in the related object. React router was used to provide the user with different views.',
-      url: 'https://portfolio-ble.herokuapp.com/',
-      git: 'https://github.com/bryan-emerson/portfolio',
-      stack: 'React/Bootstrap/Node/Express',
-      image: Portfolio
-    },
-    {
       name: 'TypeScript To Do List',
       info: 'This To Do List App was created with TypeScript, HTML, and CSS. It was bundled with snowpack. New Task <li> items are programatically appended to the <ul> parent node and are written to local storage for persistence. The app can clear checked tasks by comparing unique IDs between items and splicing them out of the Tasks array, then re writing it to local storage. The list is then re rendered in the browser to reflect the removed items!',
       url: 'https://soft-clock.surge.sh/',
@@ -60,46 +52,6 @@ function Work() {
       git: 'https://github.com/bryan-emerson/memory',
       stack: 'Javascript/HTML/CSS',
       image: Memory
-    },
-    {
-      name: 'Tic Tac Toe',
-      info: 'This project is a digital representation of the classic game Tic Tac Toe. Languages used include Javascript, HTML, and CSS. DOM manipulation has been used to create interactive gameplay with the HTML elements. This project has been deployed using surge.',
-      url: 'https://cynical-pail.surge.sh',
-      git: 'https://github.com/bryan-emerson/tic-tac',
-      stack: 'Javascript/HTML/CSS',
-      image: TicTac
-    },
-    {
-      name: 'Manga Meat Front',
-      info: 'Manga Meat is the HOTTEST new anime food restaurant on the block! This is the front end of a MERN full stack app. This app is an online menu and database management system. The frontend was created as a React app. React was chosen for its component centered build process and speedy virtual DOM. Props were used for state management, and methods written in the App.js allow individual components to make CRUD requests to the backend.',
-      url: 'https://shiny-yarn.surge.sh',
-      git: 'https://github.com/bryan-emerson/Manga-Meat-Front',
-      stack: 'React/Bootstrap',
-      image: MangaFront
-    },
-    {
-      name: 'Manga Meat Back',
-      info: 'This is the Back end of the full stack MERN app Manga Meat. It uses MongoDB, and Express is used to simplify the server creation process. This backend has full CRUD functionality using POST, GET, PUT, and DELETE requests. It is deployed using MongoDB Atlas and Heroku. Food data can be found at the \'/food\' endpoint and chef data can be found at the \'/character\' endpoint.',
-      url: 'https://manga-meat-back.herokuapp.com/food',
-      git: 'https://github.com/bryan-emerson/Manga-Meat-Back',
-      stack: 'Mongo/Express',
-      image: MangaBack
-    },
-    {
-      name: 'Dad Joke Generator',
-      info: 'This is a React app featuring a simple UI that makes a fetch call to a dad joke API. Every time the dad joke button is pressed a new random dad joke appears!',
-      url: 'http://cheerful-passenger.surge.sh/',
-      git: 'https://github.com/bryan-emerson/dad-jokes',
-      stack: 'React/CSS/Surge',
-      image: DadJokes
-    },
-    {
-      name: 'Game of War',
-      info: 'This is a digital representation of the card game war. It is based mainly in javascript and is built with Object Oriented Programming. It is played in the console. Game logic, ES6 classes, and methods have been used to create the playing environment.',
-      url: 'https://bryan-emerson.github.io/',
-      git: 'https://github.com/bryan-emerson/bryan-emerson.github.io',
-      stack: 'Javascript/HTML/CSS',
-      image: GameOfWar
     },
   ]
 

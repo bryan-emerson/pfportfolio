@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  height: 12rem;
+  background-color: black;
+  position: relative;
+  top: 10rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  flex-grow: 1;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  background-color: purple;
+  flex-grow: 3;
+}

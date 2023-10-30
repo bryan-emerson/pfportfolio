@@ -6,6 +6,7 @@ import Navbar from '../components/nav.js'
 import Hero from '../components/hero.js'
 import About from '../components/about.js'
 import Work from '../components/work.js'
+import Footer from '../components/footer.js'
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <About />
       <Work />
+      <Footer />
     </div>
     </>
   )
