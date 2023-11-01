@@ -20,9 +20,12 @@
 .right {
   display: flex;
   flex-direction: row;
-  background-color: purple;
+  background-color: #161616;
   flex-grow: 3;
+  align-items: center;
+  justify-content: space-around;
 }
+
 
 .a {
   float: left;
