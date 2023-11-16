@@ -14,6 +14,8 @@ import MangaFront from '../public/placeholder.jpg'
 import MangaBack from '../public/placeholder.jpg'
 import DadJokes from '../public/placeholder.jpg'
 import GameOfWar from '../public/placeholder.jpg'
+import KMM from '../public/kmm.png'
+import Laborie from '../public/laborie.png'
 
 
 
@@ -27,7 +29,7 @@ function Work() {
       url: 'https://soft-clock.surge.sh/',
       git: 'https://github.com/bryan-emerson/toDoList-Snowpack',
       stack: 'Typescript/Snowpack',
-      image: ToDoList
+      image: KMM
     },
     {
       name: 'Weather App!',
@@ -35,7 +37,7 @@ function Work() {
       url: 'https://unused-earthquake.surge.sh/',
       git: 'https://github.com/bryan-emerson/weather-one',
       stack: 'React/Bootstrap',
-      image: Weather
+      image: Laborie
     },
     {
       name: 'Dad Jokes 2.0',
