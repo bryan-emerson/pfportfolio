@@ -94,7 +94,7 @@ function DrawerAppBar(props) {
       <AppBar component="nav" color='transparent' className={styles.navbar} position="absolute">
         <Toolbar>
           <IconButton
-            color="inherit"
+
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
