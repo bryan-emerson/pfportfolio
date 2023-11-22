@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
@@ -16,8 +17,8 @@ function Card(props) {
       <Typography variant="h4">
         {props.projObj.name}
       </Typography>
-      <Typography>
-        {props.projObj.info}
+      <Typography >
+      <Link href={props.projObj.git} underline="hover" sx={{ color: "black" }}>Read More</Link>
       </Typography>
     </div>
     </>
