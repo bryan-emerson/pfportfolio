@@ -91,7 +91,7 @@ function DrawerAppBar(props) {
     <div >
     <Box sx={{ display: 'flex' }} >
 
-      <AppBar component="nav" className={styles.navbar} position="absolute">
+      <AppBar component="nav" sx={{ backgroundColor: "primary.main" }} className={styles.navbar} position="absolute">
         <Toolbar>
           <IconButton
 
