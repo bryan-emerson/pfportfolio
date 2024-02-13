@@ -15,6 +15,7 @@ function Card(props) {
         <Image
           src={props.projObj.image}
           alt="screenshot of app"
+          layout="responsive"
           width={600}
           height={356}
           disablegutters

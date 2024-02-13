@@ -1,18 +1,18 @@
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  font-family: 'Raleway','Courier New', Courier, monospace;
-  overflow-y: scroll hidden;
+  /* max-width: 100vw; */
+  /* overflow-x: hidden; */
+  /* font-family: 'Raleway','Courier New', Courier, monospace; */
+  /* overflow-y: scroll hidden; */
 }
 
 html::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
 }
 
 body {
-  color: black;
-  background: #ffffff;
+  /* color: black; */
+  /* background: #ffffff; */
 }
 
 a {

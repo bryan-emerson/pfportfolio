@@ -64,3 +64,19 @@
 .body {
   margin-bottom: 3rem;
 }
+
+@media (max-width: 600px) {
+  .cardContainer {
+    justify-content: center; /* Center cards in the container */
+    padding: 0 10px; /* Adjust padding for smaller screens */
+    border: 2px solid pink;
+    width: 90%;
+  }
+
+  .card {
+    flex-basis: 90%; /* Make cards take up more space */
+    width: 90%; /* Adjust width to fit mobile screens */
+    margin: 20px auto; /* Center cards with automatic horizontal margins */
+    overflow-y: visible; /* Adjust overflow if needed */
+  }
+}

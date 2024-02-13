@@ -17,3 +17,15 @@
 .cardContainer {
   border: 1px solid red;
 }
+
+@media (max-width: 600px) {
+
+  .card {
+    flex-basis: 90%; /* Make cards take up more space */
+    width: 90%; /* Adjust width to fit mobile screens */
+    margin: 20px auto; /* Center cards with automatic horizontal margins */
+    overflow-y: visible; /* Adjust overflow if needed */
+    border: 2px solid red;
+  }
+
+}
