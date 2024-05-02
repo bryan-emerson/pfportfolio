@@ -26,7 +26,7 @@ function Hero() {
 
         <div className={styles.heroContent}>
           <Typography variant="caption" gutterBottom className={styles.eyebrow}>
-            My Name Is Bryan Emersonz
+            My Name Is Bryan Emerson
           </Typography>
           <Typography variant="h1" className={styles.title}>I&apos;m a Frontend Developer</Typography>
           <Typography variant="body1" className={styles.body}>I strive to make bold, simple, user friendly solutions with React and javascript. </Typography>
