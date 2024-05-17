@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from '@/styles/slider.module.css'
 import Image from 'next/image'
 
-import Desert from 'public/desert.jpg'
+import Desert from '../public/desert.jpg'
 import Bike from '../public/bike.jpg'
 import Ski from '../public/ski.jpg'
 import Cave from '../public/cave.jpg'

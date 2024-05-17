@@ -1,6 +1,6 @@
 import Typography from "@mui/material/Typography";
 
-import styles from "styles/footer.module.css";
+import styles from "@/styles/footer.module.css";
 
 let navObjects = [
   {
