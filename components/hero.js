@@ -31,7 +31,9 @@ function Hero() {
           <Typography variant="h1" className={styles.title}>I&apos;m a Frontend Developer</Typography>
           <Typography variant="body1" className={styles.body}>I strive to make bold, simple, user friendly solutions with React and javascript. </Typography>
           <div className={styles.label}>
+          <a href="#work">
             <Typography variant="button" className={styles.ctaText}>VIEW WORK</Typography>
+            </a>
           </div>
         </div>
       </div>

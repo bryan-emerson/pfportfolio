@@ -25,7 +25,7 @@ function Work() {
 
   return (
     <>
-      <div className={styles.work}>
+      <div className={styles.work} id='work'>
         <div className={styles.wrap}>
           <div className={styles.title}>
             <Typography variant="h2" gutterBottom className={styles.h2}>
