@@ -18,7 +18,7 @@ function About() {
               </Typography>
               <Typography variant="subtitle2" className={styles.subtitle}>I&apos;m a Frontend Developer</Typography>
               <Typography variant="body1" className={styles.body}>I strive to make bold, simple, user friendly solutions with React and javascript. </Typography>
-              <JumpLinkButton href="#work">Learn More</JumpLinkButton>
+              <JumpLinkButton href="/blog">Learn More</JumpLinkButton>
           </div>
           <Container className={styles.aboutImage}>
             <Slider />

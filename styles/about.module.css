@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100;
-  min-height: 510px;
+  min-height: 40rem;
   background-color: #ffffff;
   /* border: 2px solid red; */
   /* margin-top: 20rem; */
@@ -15,7 +15,7 @@
   flex-direction: row;
   position: relative;
   /* border: 1px solid green; */
-  height: fit-content;
+  /* height: fit-content; */
   width: 100%;
 }
 
