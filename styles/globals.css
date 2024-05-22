@@ -4,6 +4,8 @@ body {
   /* overflow-x: hidden; */
   /* font-family: 'Raleway','Courier New', Courier, monospace; */
   /* overflow-y: scroll hidden; */
+  /* padding: 0; */
+  /* margin: 0; */
 }
 
 html::-webkit-scrollbar {

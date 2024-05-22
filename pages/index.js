@@ -12,13 +12,11 @@ import Footer from '../components/footer.js'
 export default function Home() {
   return (
     <>
-    <div className={styles.home}>
       <Navbar/>
       <Hero />
       <About />
       <Work />
       <Footer />
-    </div>
     </>
   )
 }

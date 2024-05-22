@@ -34,8 +34,8 @@ const Slider = () => {
                 style={{transform: `translate(-${currentIndex * 100}%)`}}
                 key={index}
                 alt='portrait of Bryan'
-                width='100'
-                height='100'
+                width='1000'
+                height='1000'
                 src={item.src} />
       })}
     </div>
