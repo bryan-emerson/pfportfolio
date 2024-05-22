@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import JumpLinkButton from './JumpLinkButton';
 
 import heroPhoto from '../public/heroPhoto.jpg'
 import heroDark from '../public/heroDark.jpg'
@@ -31,9 +32,7 @@ function Hero() {
           <Typography variant="h1" className={styles.title}>I&apos;m a Frontend Developer</Typography>
           <Typography variant="body1" className={styles.body}>I strive to make bold, simple, user friendly solutions with React and javascript. </Typography>
           <div className={styles.label}>
-          <a href="#work">
-            <Typography variant="button" className={styles.ctaText}>VIEW WORK</Typography>
-            </a>
+          <JumpLinkButton href="#work">VIEW WORK</JumpLinkButton>
           </div>
         </div>
       </div>
