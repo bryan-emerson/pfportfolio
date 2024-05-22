@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import JumpLinkButton from './JumpLinkButton';
 
 import Slider from '../components/slider.js'
 
@@ -17,9 +18,7 @@ function About() {
               </Typography>
               <Typography variant="subtitle2" className={styles.subtitle}>I&apos;m a Frontend Developer</Typography>
               <Typography variant="body1" className={styles.body}>I strive to make bold, simple, user friendly solutions with React and javascript. </Typography>
-              <div className={styles.label}>
-                <Typography variant="button" className={styles.ctaText}>LEARN MORE</Typography>
-              </div>
+              <JumpLinkButton href="#work">Learn More</JumpLinkButton>
           </div>
           <Container className={styles.aboutImage}>
             <Slider />
