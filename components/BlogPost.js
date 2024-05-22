@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 
 function BlogPost({ title, date, author, content, imageSrc, index }) {
   return (
-    <Grid container spacing={2} sx={{ marginBottom: '2rem' }}>
+    <Grid container spacing={2} sx={{ marginBottom: '2rem', marginTop: '2rem' }}>
       <Grid item xs={12} md={6} order={index % 2 === 0 ? 1 : 2}>
         <Image src={imageSrc} alt={title} width={500} height={300} />
       </Grid>
