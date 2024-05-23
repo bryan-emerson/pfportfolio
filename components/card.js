@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "@mui/material/Modal";
+import Backdrop from "@mui/material/Backdrop";
+import Fade from "@mui/material/Fade";
 import Image from "next/image";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
@@ -7,15 +10,23 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { useTheme } from '@mui/material/styles';
 
 import styles from "@/styles/card.module.css";
 import Chip from "@mui/material/Chip";
 
+import Button from "@mui/material/Button";
+
 function Card(props) {
+  const theme = useTheme();
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
-    <>
-      <div className={styles.card}>
-        <Image
+    <div className={styles.card}>
+              <Image
           src={props.projObj.image}
           alt="screenshot of app"
           layout="responsive"
@@ -23,41 +34,60 @@ function Card(props) {
           height={356}
           disablegutters
         />
-        <Box
-          sx={{
-            display: "flex", // Enables flexbox layout
-            flexWrap: "wrap", // Allows items to wrap onto multiple lines
-            alignItems: "center", // Aligns items vertically in the center
-            gap: 1, // Adds a gap between items
-          }}
-        >
-          {props.projObj.stack.map((tech, index) => (
-            <React.Fragment key={index}>
-              <Typography>{tech}</Typography>
-              {index < props.projObj.stack.length - 1 && (
-                <Typography sx={{ mx: 0.2 }}>/</Typography>
-              )}
-            </React.Fragment>
-          ))}
-        </Box>
-        <Typography variant="h4">{props.projObj.name}</Typography>
-        <Accordion sx={{ boxShadow: 'none', '&:before': { display: 'none' }, mt: "1rem" }}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
+      <Box
+        sx={{
+          display: "flex", // Enables flexbox layout
+          flexWrap: "wrap", // Allows items to wrap onto multiple lines
+          alignItems: "center", // Aligns items vertically in the center
+          gap: 1, // Adds a gap between items
+        }}
+      >
+        {props.projObj.stack.map((tech, index) => (
+          <React.Fragment key={index}>
+            <Typography>{tech}</Typography>
+            {index < props.projObj.stack.length - 1 && (
+              <Typography sx={{ mx: 0.2 }}>/</Typography>
+            )}
+          </React.Fragment>
+        ))}
+      </Box>
+      <Typography variant="h4">{props.projObj.name}</Typography>
+      <Button variant="contained" onClick={handleOpen}>
+        Read More
+      </Button>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
+      >
+        <Fade in={open}>
+          <Box
+            sx={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              width: 400,
+              bgcolor: 'background.paper',
+              border: '2px solid #000',
+              boxShadow: 24,
+              p: 4,
+            }}
           >
-            <Typography>Read More</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              {props.projObj.details}
-
+            <Typography id="transition-modal-title" variant="h6" component="h2">
+              {props.projObj.name}
             </Typography>
-          </AccordionDetails>
-        </Accordion>
-      </div>
-    </>
+            <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+              {props.projObj.details}
+            </Typography>
+          </Box>
+        </Fade>
+      </Modal>
+    </div>
   );
 }
 

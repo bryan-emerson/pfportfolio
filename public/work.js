@@ -13,7 +13,7 @@ import Laborie from '../public/laborie.png'
 
 let projects = [
   {
-    name: 'TypeScript To Do List',
+    name: 'TypeScript To Do Listz',
     info: 'This To Do List App was created with TypeScript, HTML, and CSS. It was bundled with snowpack. New Task <li> items are programatically appended to the <ul> parent node and are written to local storage for persistence. The app can clear checked tasks by comparing unique IDs between items and splicing them out of the Tasks array, then re writing it to local storage. The list is then re rendered in the browser to reflect the removed items!',
     url: 'https://soft-clock.surge.sh/',
     git: 'https://github.com/bryan-emerson/toDoList-Snowpack',
@@ -27,7 +27,8 @@ let projects = [
     url: 'https://unused-earthquake.surge.sh/',
     git: 'https://github.com/bryan-emerson/weather-one',
     stack: ['C#', '.Net', 'React', 'Azure', 'SQL'],
-    image: Laborie
+    image: Laborie,
+    details: "This To Do List App was created with TypeScript, HTML, and CSS. It was bundled with snowpack. New Task <li> items are programatically appended to the <ul> parent node and are written to local storage for persistence. The app can clear checked tasks by comparing unique IDs between items and splicing them out of the Tasks array, then re writing it to local storage. The list is then re rendered in the browser to reflect the removed items!"
   },
   {
     name: 'Dad Jokes 2.0',
@@ -35,7 +36,8 @@ let projects = [
     url: 'https://abhorrent-lumber.surge.sh/',
     git: 'https://github.com/bryan-emerson/jokeDad',
     stack: ['React', 'Bootstrap'],
-    image: Dad2
+    image: Dad2,
+    details: "This To Do List App was created with TypeScript, HTML, and CSS. It was bundled with snowpack. New Task <li> items are programatically appended to the <ul> parent node and are written to local storage for persistence. The app can clear checked tasks by comparing unique IDs between items and splicing them out of the Tasks array, then re writing it to local storage. The list is then re rendered in the browser to reflect the removed items!"
   },
   {
     name: 'Memory',
@@ -43,7 +45,8 @@ let projects = [
     url: 'https://overt-library.surge.sh',
     git: 'https://github.com/bryan-emerson/memory',
     stack: ['Javascript', 'HTML', 'CSS'],
-    image: Memory
+    image: Memory,
+    details: "This To Do List App was created with TypeScript, HTML, and CSS. It was bundled with snowpack. New Task <li> items are programatically appended to the <ul> parent node and are written to local storage for persistence. The app can clear checked tasks by comparing unique IDs between items and splicing them out of the Tasks array, then re writing it to local storage. The list is then re rendered in the browser to reflect the removed items!"
   },
 ]
 
