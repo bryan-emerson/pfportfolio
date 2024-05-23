@@ -20,8 +20,8 @@ function About() {
         }}
       >
         <Box className={styles.aboutContent} sx={{  }}>
-          <Typography variant="h2">About Me</Typography>
-          <Typography variant="body1">I&apos;m a Frontend Developer with a passion for creating user-friendly solutions with React and JavaScript.</Typography>
+          <Typography variant="h2">Who is He?</Typography>
+          <Typography variant="body1">Attention to detail. Military Foundations. Hospitality Industry Hustle.</Typography>
           <JumpLinkButton href="/blog">Learn more</JumpLinkButton>
         </Box>
       </Grid>
