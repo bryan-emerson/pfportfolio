@@ -24,11 +24,11 @@ function Work() {
   }
 
   return (
-    <Box className={styles.work} id='work' sx={{ mt: '4rem', backgroundColor: theme.palette.secondary.main }}>
+    <Box className={styles.work} id='work' sx={{ p: '2rem', backgroundColor: theme.palette.secondary.main }}>
       <Grid container spacing={2}>
-        <Grid item xs={12} sx={{ m: '2rem' }}>
-          <Typography variant="h2">FEATURED</Typography>
-          <Typography variant="body2">Work</Typography>
+        <Grid item xs={12} sx={{ }}>
+          <Typography variant="body1">FEATURED</Typography>
+          <Typography variant="h2">Work</Typography>
           <Typography variant="body1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Typography>
         </Grid>
         {allProjects}

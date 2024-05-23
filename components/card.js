@@ -10,7 +10,7 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { useTheme } from '@mui/material/styles';
+import { useTheme } from "@mui/material/styles";
 
 import styles from "@/styles/card.module.css";
 import Chip from "@mui/material/Chip";
@@ -25,15 +25,16 @@ function Card(props) {
   const handleClose = () => setOpen(false);
 
   return (
-    <div className={styles.card}>
-              <Image
-          src={props.projObj.image}
-          alt="screenshot of app"
-          layout="responsive"
-          width={600}
-          height={356}
-          disablegutters
-        />
+    <div>
+      <Box sx={{ my: '1rem' }}>
+      <Image
+        src={props.projObj.image}
+        alt="screenshot of app"
+        layout="responsive"
+        width={600}
+        height={356}
+        disablegutters
+      />
       <Box
         sx={{
           display: "flex", // Enables flexbox layout
@@ -67,13 +68,13 @@ function Card(props) {
         <Fade in={open}>
           <Box
             sx={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
               width: 400,
-              bgcolor: 'background.paper',
-              border: '2px solid #000',
+              bgcolor: "background.paper",
+              border: "2px solid #000",
               boxShadow: 24,
               p: 4,
             }}
@@ -87,6 +88,7 @@ function Card(props) {
           </Box>
         </Fade>
       </Modal>
+      </Box>
     </div>
   );
 }

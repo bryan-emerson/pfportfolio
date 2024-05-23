@@ -1,31 +1,31 @@
 .card {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  flex-basis: 44%;
-  height: 500px;
-  width: 600px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* flex-wrap: nowrap; */
+  /* flex-basis: 44%; */
+  /* height: 500px; */
+  /* width: 600px; */
   /* border: 2px solid purple; */
-  margin-bottom: 40px;
-  overflow-y: scroll;
+  /* margin-bottom: 40px; */
+  /* overflow-y: scroll; */
 }
 
 .photo {
-  flex-basis: 100%;
+  /* flex-basis: 100%; */
 }
 
 .cardContainer {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 @media (max-width: 600px) {
 
   .card {
-    flex-basis: 90%; /* Make cards take up more space */
-    width: 90%; /* Adjust width to fit mobile screens */
-    margin: 20px auto; /* Center cards with automatic horizontal margins */
-    overflow-y: visible; /* Adjust overflow if needed */
-    border: 2px solid red;
+    /* flex-basis: 90%; */
+    /* width: 90%; */
+    /* margin: 20px auto; */
+    /* overflow-y: visible; */
+    /* border: 2px solid red; */
   }
 
 }
