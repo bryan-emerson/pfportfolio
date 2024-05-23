@@ -22,7 +22,7 @@ function Hero({ imageSrc, children }) {
           sm: '74%',
         },
         alignItems: {
-          xs: 'flex-end',
+          xs: 'flex-start',
           sm: 'center',
         },
         height: '100vh',
@@ -32,7 +32,7 @@ function Hero({ imageSrc, children }) {
         color: 'white',
       }}
     >
-      <Grid container item xs={12} md={6} sx={{ paddingBottom: { xs: '40%', sm: '0' } }}>
+      <Grid container item xs={12} md={6} sx={{ pt: { xs: '25%', sm: '65%' } }}>
         {childrenArray.map((child, index) => (
           <Grid item xs={12} key={index}>
             {child}
