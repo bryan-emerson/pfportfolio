@@ -66,28 +66,50 @@ function Card(props) {
           timeout: 500,
         }}
       >
-        <Fade in={open}>
-          <Box
-            sx={{
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              width: { xs: '70%', md: 400 },
-              bgcolor: "background.paper",
-              border: "2px solid #000",
-              boxShadow: 24,
-              p: 4,
-            }}
-          >
-            <Typography id="transition-modal-title" variant="h6" component="h2">
-              {props.projObj.name}
-            </Typography>
-            <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              {props.projObj.details}
-            </Typography>
-          </Box>
-        </Fade>
+<Fade in={open}>
+  <Box
+    sx={{
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      width: { xs: '70%', md: 400 },
+      bgcolor: "background.paper",
+      border: "2px solid #000",
+      boxShadow: 24,
+      p: 4,
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+    }}
+  >
+    <Typography id="transition-modal-title" variant="h6" component="h2">
+      {props.projObj.name}
+    </Typography>
+    <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+      {props.projObj.details}
+    </Typography>
+    <Box
+      sx={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        width: '100%',
+        mt: 2,
+      }}
+    >
+      {props.projObj.url && (
+        <JumpLinkButton href={props.projObj.url} target="_blank" rel="noopener noreferrer">
+          Go To Site
+        </JumpLinkButton>
+      )}
+      {props.projObj.git && (
+        <JumpLinkButton href={props.projObj.git} target="_blank" rel="noopener noreferrer">
+          Visit Repo
+        </JumpLinkButton>
+      )}
+    </Box>
+  </Box>
+</Fade>
       </Modal>
       </Box>
     </div>
