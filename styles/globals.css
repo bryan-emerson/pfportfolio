@@ -1,29 +1,18 @@
 html,
 body {
   scroll-behavior: smooth;
-  /* max-width: 100vw; */
-  /* overflow-x: hidden; */
-  /* font-family: 'Raleway','Courier New', Courier, monospace; */
-  /* overflow-y: scroll hidden; */
-  /* padding: 0; */
-  /* margin: 0; */
+  /* width: 100vw; */
+  /* position:fixed */
 }
-
-html::-webkit-scrollbar {
-  /* display: none; */
-}
-
 body {
-  /* color: black; */
-  /* background: #ffffff; */
+  /* border: 1px solid red; */
+  /* width: 100vw; */
+}
+
+html {
+  border: 1px solid red;
 }
 
 a {
   text-decoration: none;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-} */
