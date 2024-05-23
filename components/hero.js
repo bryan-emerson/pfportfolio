@@ -17,16 +17,22 @@ function Hero({ imageSrc, children }) {
       sx={{
         backgroundImage: `url(${imageSrc})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: {
+          xs: '63%',
+          sm: '74%',
+        },
+        alignItems: {
+          xs: 'flex-end',
+          sm: 'center',
+        },
         height: '100vh',
         display: 'flex',
-        alignItems: 'center',
         justifyContent: 'flex-start',
         paddingLeft: '2rem',
         color: 'white',
       }}
     >
-      <Grid container item xs={12} md={6}>
+      <Grid container item xs={12} md={6} sx={{ paddingBottom: { xs: '40%', sm: '0' } }}>
         {childrenArray.map((child, index) => (
           <Grid item xs={12} key={index}>
             {child}
