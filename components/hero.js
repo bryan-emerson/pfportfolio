@@ -2,8 +2,10 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import JumpLinkButton from './JumpLinkButton';
+import { useTheme } from '@mui/material/styles';
 
 function Hero({ imageSrc, children }) {
+  const theme = useTheme();
 
   const childrenArray = [
     <Typography variant="body1" key="title">My Name Is Bryan Emerson</Typography>,
