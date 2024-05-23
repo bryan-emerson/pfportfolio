@@ -1,32 +1,43 @@
-import Image from 'next/image'
+// About.js
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
 import JumpLinkButton from './JumpLinkButton';
-
 import Slider from '../components/slider.js'
 
+import { useTheme } from '@mui/material/styles';
 import styles from '@/styles/about.module.css'
 
 function About() {
+  const theme = useTheme();
   return (
-    <>
-      <div className={styles.about}>
-        <div className={styles.contentWrapper}>
-          <div className={styles.aboutContent}>
-              <Typography variant="h2" gutterBottom className={styles.h2}>
-                ABOUT
-              </Typography>
-              <Typography variant="subtitle2" className={styles.subtitle}>I&apos;m a Frontend Developer</Typography>
-              <Typography variant="body1" className={styles.body}>I strive to make bold, simple, user friendly solutions with React and javascript. </Typography>
-              <JumpLinkButton href="/blog">Learn More</JumpLinkButton>
-          </div>
-          <Container className={styles.aboutImage}>
-            <Slider />
-          </Container>
-        </div>
-      </div>
-    </>
-  )
+    <Grid container spacing={2} sx={{ pt:"4rem"}}>
+      <Grid item xs={12} md={6}
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}
+      >
+        <Box className={styles.aboutContent} sx={{ pl: '2rem' }}>
+          <Typography variant="h1">About Me</Typography>
+          <Typography variant="body1">I&apos;m a Frontend Developer with a passion for creating user-friendly solutions with React and JavaScript.</Typography>
+          <JumpLinkButton href="/blog">Learn more</JumpLinkButton>
+        </Box>
+      </Grid>
+      <Grid item xs={12} md={6}
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}
+      >
+        <Box sx={{ maxWidth: { xs: '90%', md: '80%'},}}>
+          <Slider />
+        </Box>
+      </Grid>
+    </Grid>
+  );
 }
 
 export default About;

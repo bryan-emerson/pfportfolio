@@ -32,7 +32,7 @@ function Hero({ imageSrc, children }) {
         color: 'white',
       }}
     >
-      <Grid container item xs={12} md={6} sx={{ pt: { xs: '25%', sm: '65%' } }}>
+      <Grid container item xs={12} md={6} sx={{ pt: { xs: '25%', } }}>
         {childrenArray.map((child, index) => (
           <Grid item xs={12} key={index}>
             {child}
