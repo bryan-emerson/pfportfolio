@@ -8,7 +8,10 @@ function Hero({ imageSrc, children }) {
   const theme = useTheme();
 
   const childrenArray = [
-    <Typography variant="body1" key="title">My Name Is Bryan Emerson</Typography>,
+    <Box key="intro"sx={{ display: 'inline' }}>
+      <Typography  variant="body1" sx={{ display: 'inline' }}> My Name Is </Typography>
+      <Typography variant="body1" sx={{ fontWeight: 'bold', display: 'inline' }}>Bryan Emerson</Typography>
+    </Box>,
     <Typography variant="h1" key="description">I&apos;m a Frontend Developer</Typography>,
     <Typography variant="body1" key="description">I strive to make bold, simple, user friendly solutions with React and javascript.</Typography>,
     <JumpLinkButton href="#work" key="button">VIEW WORK</JumpLinkButton>,
@@ -26,6 +29,7 @@ function Hero({ imageSrc, children }) {
         alignItems: {
           xs: 'flex-start',
           sm: 'center',
+          md: 'center',
         },
         height: '100vh',
         display: 'flex',
@@ -34,7 +38,7 @@ function Hero({ imageSrc, children }) {
         color: 'white',
       }}
     >
-      <Grid container item xs={12} md={6} sx={{ pt: { xs: '25%', } }}>
+      <Grid container item xs={12} md={6} sx={{ pt: { xs: '5%', sm: '70%', md:'0%'} }}>
         {childrenArray.map((child, index) => (
           <Grid item xs={12} key={index}>
             {child}

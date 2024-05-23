@@ -21,7 +21,7 @@ function About() {
       >
         <Box className={styles.aboutContent} sx={{  }}>
           <Typography variant="h2">Who is He?</Typography>
-          <Typography variant="body1">Attention to detail. Military Foundations. Hospitality Industry Hustle.</Typography>
+          <Typography variant="body1">Attention to detail. Team Player Extraordinaire. Military Foundations. Hospitality Industry Hustle.</Typography>
           <JumpLinkButton href="/blog">Learn more</JumpLinkButton>
         </Box>
       </Grid>
