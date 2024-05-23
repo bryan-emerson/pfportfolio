@@ -16,6 +16,7 @@ import styles from "@/styles/card.module.css";
 import Chip from "@mui/material/Chip";
 
 import Button from "@mui/material/Button";
+import JumpLinkButton from "./JumpLinkButton";
 
 function Card(props) {
   const theme = useTheme();
@@ -53,9 +54,9 @@ function Card(props) {
         ))}
       </Box>
       <Typography variant="h4">{props.projObj.name}</Typography>
-      <Button variant="contained" onClick={handleOpen}>
+      <JumpLinkButton variant="contained" handleOpen={handleOpen}>
         Read More
-      </Button>
+      </JumpLinkButton>
       <Modal
         open={open}
         onClose={handleClose}
