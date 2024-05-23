@@ -13,7 +13,7 @@ import Laborie from '../public/laborie.png'
 
 let projects = [
   {
-    name: 'TypeScript To Do Listz',
+    name: 'Know My Menu',
     info: 'This To Do List App was created with TypeScript, HTML, and CSS. It was bundled with snowpack. New Task <li> items are programatically appended to the <ul> parent node and are written to local storage for persistence. The app can clear checked tasks by comparing unique IDs between items and splicing them out of the Tasks array, then re writing it to local storage. The list is then re rendered in the browser to reflect the removed items!',
     url: 'https://soft-clock.surge.sh/',
     git: 'https://github.com/bryan-emerson/toDoList-Snowpack',
@@ -46,6 +46,24 @@ let projects = [
     git: 'https://github.com/bryan-emerson/memory',
     stack: ['Javascript', 'HTML', 'CSS'],
     image: Memory,
+    details: "This To Do List App was created with TypeScript, HTML, and CSS. It was bundled with snowpack. New Task <li> items are programatically appended to the <ul> parent node and are written to local storage for persistence. The app can clear checked tasks by comparing unique IDs between items and splicing them out of the Tasks array, then re writing it to local storage. The list is then re rendered in the browser to reflect the removed items!"
+  },
+  {
+    name: 'TypeScript To Do Listz',
+    info: 'This To Do List App was created with TypeScript, HTML, and CSS. It was bundled with snowpack. New Task <li> items are programatically appended to the <ul> parent node and are written to local storage for persistence. The app can clear checked tasks by comparing unique IDs between items and splicing them out of the Tasks array, then re writing it to local storage. The list is then re rendered in the browser to reflect the removed items!',
+    url: 'https://soft-clock.surge.sh/',
+    git: 'https://github.com/bryan-emerson/toDoList-Snowpack',
+    stack: ['Typescript', 'Next.js', 'Material UI', 'React', 'Vercel'],
+    image: KMM,
+    details: "This To Do List App was created with TypeScript, HTML, and CSS. It was bundled with snowpack. New Task <li> items are programatically appended to the <ul> parent node and are written to local storage for persistence. The app can clear checked tasks by comparing unique IDs between items and splicing them out of the Tasks array, then re writing it to local storage. The list is then re rendered in the browser to reflect the removed items!"
+  },
+  {
+    name: 'TypeScript To Do Listz',
+    info: 'This To Do List App was created with TypeScript, HTML, and CSS. It was bundled with snowpack. New Task <li> items are programatically appended to the <ul> parent node and are written to local storage for persistence. The app can clear checked tasks by comparing unique IDs between items and splicing them out of the Tasks array, then re writing it to local storage. The list is then re rendered in the browser to reflect the removed items!',
+    url: 'https://soft-clock.surge.sh/',
+    git: 'https://github.com/bryan-emerson/toDoList-Snowpack',
+    stack: ['Typescript', 'Next.js', 'Material UI', 'React', 'Vercel'],
+    image: KMM,
     details: "This To Do List App was created with TypeScript, HTML, and CSS. It was bundled with snowpack. New Task <li> items are programatically appended to the <ul> parent node and are written to local storage for persistence. The app can clear checked tasks by comparing unique IDs between items and splicing them out of the Tasks array, then re writing it to local storage. The list is then re rendered in the browser to reflect the removed items!"
   },
 ]
