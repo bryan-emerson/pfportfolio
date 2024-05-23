@@ -12,8 +12,8 @@ function Hero({ imageSrc, children }) {
       <Typography  variant="body1" sx={{ display: 'inline' }}> My Name Is </Typography>
       <Typography variant="body1" sx={{ fontWeight: 'bold', display: 'inline' }}>Bryan Emerson</Typography>
     </Box>,
-    <Typography variant="h1" key="description">I&apos;m a Frontend Developer</Typography>,
-    <Typography variant="body1" key="description">I strive to make bold, simple, user friendly solutions with React and javascript.</Typography>,
+    <Typography variant="h1" key="description" sx={{ width: { xs: '80%', sm: '100%'} }}>I&apos;m a Frontend Developer</Typography>,
+    <Typography variant="body1" key="description" sx={{ width: { xs: '80%', sm: '100%'} }}>I strive to make bold, simple, user friendly solutions with React and javascript.</Typography>,
     <JumpLinkButton href="#work" key="button">VIEW WORK</JumpLinkButton>,
   ];
 
@@ -27,7 +27,7 @@ function Hero({ imageSrc, children }) {
           sm: '74%',
         },
         alignItems: {
-          xs: 'flex-start',
+          xs: 'center',
           sm: 'center',
           md: 'center',
         },
@@ -38,7 +38,7 @@ function Hero({ imageSrc, children }) {
         color: 'white',
       }}
     >
-      <Grid container item xs={12} md={6} sx={{ pt: { xs: '5%', sm: '70%', md:'0%'} }}>
+      <Grid container item xs={12} md={6} sx={{ pt: { xs: '55%', sm: '70%', md:'0%'}, }}>
         {childrenArray.map((child, index) => (
           <Grid item xs={12} key={index}>
             {child}
