@@ -29,7 +29,7 @@ function Work() {
         <Grid item xs={12} sx={{ }}>
           <Typography variant="body1">FEATURED</Typography>
           <Typography variant="h2">Work</Typography>
-          <Typography variant="body1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Typography>
+          <Typography variant="body1">Look What I Can Do</Typography>
         </Grid>
         {allProjects}
       </Grid>
