@@ -6,6 +6,7 @@ import Navbar from "../components/nav.js";
 import Hero from "../components/hero.js";
 import About from "../components/about.js";
 import Work from "../components/work.js";
+import Stack from "../components/stack.js";
 import Footer from "../components/footer.js";
 import Typography from "@mui/material/Typography";
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Hero imageSrc="/newHero.jpg" />
       <About />
       <Work />
+      <Stack />
       <Footer />
     </>
   );

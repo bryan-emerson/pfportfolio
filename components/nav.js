@@ -23,13 +23,13 @@ const drawerWidth = 240;
 let navObjects = [
   {
     name: 'About',
-    url: '/',
+    url: '/blog',
     target: null,
     key: 1,
   },
   {
-    name: 'Projects',
-    url: '/projects',
+    name: 'Work',
+    url: '/#work',
     target: null,
     key: 2,
   },
