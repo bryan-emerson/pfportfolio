@@ -90,8 +90,8 @@ function Card(props) {
               >
                 {props.projObj.name}
               </Typography>
-              <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-                {props.projObj.details}
+              <Typography variant='body1' id="transition-modal-info" sx={{ mt: 2, fontSize: { xs: '0.7rem', sm: '0.875rem' }, overflowY: 'auto', maxHeight: '200px' }}>
+                {props.projObj.info}
               </Typography>
               <Box
                 sx={{
