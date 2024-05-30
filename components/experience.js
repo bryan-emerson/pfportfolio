@@ -10,11 +10,34 @@ import {
   ListItem,
   ListItemIcon,
 } from "@mui/material";
-import JumpLinkButton from './JumpLinkButton';
+import JumpLinkButton from "./JumpLinkButton";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 
 const Experience = () => {
   const theme = useTheme();
+
+  const jobs = [
+    {
+      title: 'Frontend Software Developer',
+      company: 'Know My Menu',
+      date: 'July 2023 - Current',
+      responsibilities: [
+        'Conducted ongoing improvement and product lifecycle maintenance of proprietary diet management app using Next.js, Vercel, React, Recoil, MUI, TypeScript, Axios, and RHF',
+        'Implemented ADA Section 508 accessibility compliance using Wave, Chrome Lighthouse, and WAG ARIA best practices',
+        'Implemented real-time data synchronization using React Recoil, SWR, and polling mechanisms to ensure the UI remained in sync with the backend',
+      ],
+    },
+    {
+      title: 'PLM Software Developer',
+      company: 'Laborie Medical Technologies',
+      date: 'APR 2021 - Mar 2022',
+      responsibilities: [
+        'Completed 14 device to EMR integrations for industry leading urology clinics using Javascript/Node.JS & HL7 resulting in $280,000 in revenue within 2 months of hire',
+        'Conducted ongoing improvement and product lifecycle maintenance of proprietary medical device software and hardware using C#/.NET, Javascript,  React, and C++',
+        'Provided support for sales team as Sales Engineer to secure purchases from potential customers',
+      ],
+    },
+  ];
   return (
     <Box
       sx={{
@@ -24,80 +47,42 @@ const Experience = () => {
     >
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
-          <Typography variant="body1">Highlights</Typography>
-          <Typography variant="h4">Experience</Typography>
-          <Typography variant="body1">Practice Makes Perfect</Typography>
-          <JumpLinkButton href="#work" key="button">VIEW RESUME</JumpLinkButton>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+            }}
+          >
+            <Typography variant="body1">Highlights</Typography>
+            <Typography variant="h4">Experience</Typography>
+            <Typography variant="body1">Practice Makes Perfect</Typography>
+            <JumpLinkButton href='https://docs.google.com/document/d/12CYUXDHy1HpexCoWimkxkHj8vrJjY78ds-yaDTRAZXU/edit' key="button" target='_blank'>
+              VIEW RESUME
+            </JumpLinkButton>
+          </Box>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Divider orientation="horizontal" sx={{ my: "1rem" }} />
-          <Box>
-            <Typography variant="h6">Frontend Software Developer</Typography>
-            <Typography variant="body2">Know My Menu</Typography>
-            <Typography variant="body2">July 2023 - Current</Typography>
-            <List>
-              <ListItem>
-                <ListItemIcon>
-                  <FiberManualRecordIcon fontSize="small" />
-                </ListItemIcon>
-                <Typography variant="body1">Item 1</Typography>
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
-                  <FiberManualRecordIcon fontSize="small" />
-                </ListItemIcon>
-                <Typography variant="body1">Item 2</Typography>
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
-                  <FiberManualRecordIcon fontSize="small" />
-                </ListItemIcon>
-                <Typography variant="body1">Item 3</Typography>
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
-                  <FiberManualRecordIcon fontSize="small" />
-                </ListItemIcon>
-                <Typography variant="body1">Item 4</Typography>
-              </ListItem>
-            </List>
-          </Box>
-          <Divider orientation="horizontal" sx={{ my: "1rem" }} />
-          <Box>
-            <Typography variant="h6">PLM Software Developer</Typography>
-            <Typography variant="body2">
-              Laborie Medical Technologies
-            </Typography>
-            <Typography variant="body2">APR 2012 - Mar 2022</Typography>
-            <List>
-              <ListItem>
-                <ListItemIcon>
-                  <FiberManualRecordIcon fontSize="small" />
-                </ListItemIcon>
-                <Typography variant="body1">Item 1</Typography>
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
-                  <FiberManualRecordIcon fontSize="small" />
-                </ListItemIcon>
-                <Typography variant="body1">Item 2</Typography>
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
-                  <FiberManualRecordIcon fontSize="small" />
-                </ListItemIcon>
-                <Typography variant="body1">Item 3</Typography>
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
-                  <FiberManualRecordIcon fontSize="small" />
-                </ListItemIcon>
-                <Typography variant="body1">Item 4</Typography>
-              </ListItem>
-            </List>
-          </Box>
-          <Divider orientation="horizontal" sx={{ my: "1rem" }} />
-        </Grid>
+    {jobs.map((job, index) => (
+      <Box key={index}>
+        <Divider orientation="horizontal" sx={{ my: '1rem' }} />
+        <Typography variant="h6">{job.title}</Typography>
+        <Typography variant="body2" sx={{ my: '.5rem' }}>{job.company}</Typography>
+        <Typography variant="body2">{job.date}</Typography>
+        <List>
+          {job.responsibilities.map((responsibility, i) => (
+            <ListItem alignItems="flex-start" key={i}>
+              <ListItemIcon>
+                <FiberManualRecordIcon fontSize="small" />
+              </ListItemIcon>
+              <Typography variant="body1">{responsibility}</Typography>
+            </ListItem>
+          ))}
+        </List>
+      </Box>
+    ))}
+    <Divider orientation="horizontal" sx={{ my: '1rem' }} />
+  </Grid>
       </Grid>
     </Box>
   );

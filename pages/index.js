@@ -8,7 +8,7 @@ import About from "../components/about.js";
 import Work from "../components/work.js";
 import Stack from "../components/stack.js";
 import Footer from "../components/footer.js";
-import Experience from "../components/Experience.js";
+import Experience from "../components/experience.js";
 
 export default function Home() {
   return (
