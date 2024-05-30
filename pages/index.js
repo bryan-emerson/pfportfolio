@@ -8,7 +8,7 @@ import About from "../components/about.js";
 import Work from "../components/work.js";
 import Stack from "../components/stack.js";
 import Footer from "../components/footer.js";
-import Typography from "@mui/material/Typography";
+import Experience from "../components/Experience.js";
 
 export default function Home() {
   return (
@@ -21,6 +21,7 @@ export default function Home() {
       <About />
       <Work />
       <Stack />
+      <Experience />
       <Footer />
     </>
   );
