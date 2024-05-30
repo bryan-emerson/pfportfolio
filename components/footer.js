@@ -1,4 +1,4 @@
-import Typography from "@mui/material/Typography";
+import { Box, Container, Typography, Link } from '@mui/material';
 
 import styles from "@/styles/footer.module.css";
 
@@ -42,36 +42,67 @@ let navObjects = [
 ]
 
 function Footer() {
-
-
-  function returnLinks(arr, index) {
-    let linkArr =[];
-
-    for (let i = 0; i < arr.length; i++) {
-     linkArr.push(<a className={styles.a}>{arr[i].name}</a>)
-    }
-    return linkArr;
+  function returnLinks(arr) {
+    return arr.map((linkObj) => (
+      <Link
+        href={linkObj.url}
+        target={linkObj.target}
+        key={linkObj.key}
+        sx={{
+          display: 'block',
+          color: '#f2f2f2',
+          textAlign: 'center',
+          padding: '.5rem 1rem',
+          textDecoration: 'none',
+          fontSize: '17px',
+          borderRadius: '20px',
+          '&:hover': {
+            backgroundColor: '#ddd',
+            color: 'black',
+          },
+          '&.active': {
+            backgroundColor: '#04AA6D',
+            color: 'white',
+          },
+        }}
+      >
+        {linkObj.name}
+      </Link>
+    ));
   }
 
-  let allLinks = "";
-
-  if (navObjects.length) {
-    allLinks = returnLinks(navObjects)
-  }
-
+  const allLinks = navObjects.length ? returnLinks(navObjects) : "";
 
   return (
-    <>
-      <div className={styles.footer}>
-        <div className={styles.left}>
-          <Typography>Think We&#39;d Be A Great Fit?</Typography>
-          <Typography>Let&#39;s Talk</Typography>
-        </div>
-        <div className={styles.right}>
-          <Typography>{allLinks}</Typography>
-        </div>
-      </div>
-    </>
+    <Box sx={{
+      display: 'flex',
+      flexDirection: { xs: 'column', md: 'row' },
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      bgcolor: '#161616',
+      color: '#FFFFFF',
+      p: 2
+    }}>
+      <Container sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexGrow: { xs: 1, md: 1.5 }
+      }}>
+        <Typography variant="body1">Think We'd Be A Great Fit?</Typography>
+        <Typography variant="body1">Let's Talk...</Typography>
+      </Container>
+      <Container sx={{
+        display: 'flex',
+        flexDirection: { xs: 'column', sm: 'row' },
+        alignItems: 'center',
+        justifyContent: 'space-evenly',
+        flexGrow: { xs: 1, md: 3 }
+      }}>
+        {allLinks}
+      </Container>
+    </Box>
   );
 }
 

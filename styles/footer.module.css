@@ -1,30 +1,30 @@
 .footer {
-  color: #FFFFFF;
+  /* color: #FFFFFF;
   display: flex;
   flex-direction: row;
   height: 12rem;
   background-color: #161616;
-  position: relative;
-  top: 84em;
+  position: relative; */
+
 }
 
 .left {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   background-color: #161616;
   flex-grow: 1.5;
   align-items: left;
   justify-content: center;
-  margin-left: 3rem;
+  margin-left: 3rem; */
 }
 
 .right {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   background-color: #161616;
   flex-grow: 3;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around; */
   /* align-content: flex-end; */
   /* border: 2px solid orange; */
 }
