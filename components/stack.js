@@ -60,7 +60,7 @@ function Stack() {
               justifyContent: "center",
             }}
           >
-            <List sx={{ mr: { md: "8rem" }, p: 1 }}>
+            <List sx={{ px: 2 }}>
               <Typography variant="body1">React</Typography>
               <Typography variant="body1">Next.js</Typography>
               <Typography variant="body1">Javascript</Typography>
