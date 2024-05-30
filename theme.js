@@ -36,6 +36,17 @@ let theme = createTheme({
         fontSize: '4rem',
       },
     },
+    h6: {
+      fontSize: '1rem',
+      fontWeight: 'bold',
+      '@media (min-width:600px)': {
+        fontSize: '1rem',
+        fontWeight: 'normal',
+      },
+      '@media (min-width:960px)': {
+        fontSize: '1.5rem',
+      },
+    },
     body1: {
       fontSize: '.9rem',
       '@media (min-width:600px)': {
