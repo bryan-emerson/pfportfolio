@@ -3,8 +3,16 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
+import Image from 'next/image';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 function Stack() {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
+  const imageSize = isSmallScreen ? 300 : 500;
+
   return (
     <Grid container spacing={2} sx={{}}>
       <Grid
@@ -18,7 +26,7 @@ function Stack() {
           m: "2rem",
         }}
       >
-        <img src="/maya.png" alt="description" style={{ maxWidth: "80%" }} />
+        <Image src="/maya.png" alt="description" width={imageSize} height={imageSize} layout="responsive" />
       </Grid>
       <Grid item xs={12} md={6}
   sx={{
