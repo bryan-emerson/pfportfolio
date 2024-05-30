@@ -1,6 +1,5 @@
-import { Box, Container, Typography, Link } from '@mui/material';
-
-import styles from "@/styles/footer.module.css";
+import { Box, Container, Typography, Link, Divider } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 let navObjects = [
   {
@@ -42,6 +41,7 @@ let navObjects = [
 ]
 
 function Footer() {
+  const theme = useTheme();
   function returnLinks(arr) {
     return arr.map((linkObj) => (
       <Link
@@ -66,7 +66,9 @@ function Footer() {
           },
         }}
       >
+        <Typography variant='button'>
         {linkObj.name}
+        </Typography>
       </Link>
     ));
   }
@@ -88,17 +90,18 @@ function Footer() {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        flexGrow: { xs: 1, md: 1.5 }
+        flex: { xs: '1 1 auto', md: '1 1 30%' }
       }}>
-        <Typography variant="body1">Think We'd Be A Great Fit?</Typography>
-        <Typography variant="body1">Let's Talk...</Typography>
+        <Typography variant="h6">Think We'd Be A Great Fit?</Typography>
+        <Typography variant="h6">Let's Talk...</Typography>
       </Container>
+      <Divider orientation="vertical" flexItem sx={{ bgcolor: '#FFFFFF', my: 2, display: { xs: 'none', md: 'block' } }} />
       <Container sx={{
         display: 'flex',
         flexDirection: { xs: 'column', sm: 'row' },
         alignItems: 'center',
         justifyContent: 'space-evenly',
-        flexGrow: { xs: 1, md: 3 }
+        flex: { xs: '1 1 auto', md: '1 1 70%' }
       }}>
         {allLinks}
       </Container>
