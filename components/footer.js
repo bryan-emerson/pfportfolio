@@ -9,8 +9,8 @@ let navObjects = [
     key: 1,
   },
   {
-    name: 'Projects',
-    url: '/projects',
+    name: 'Work',
+    url: '/blog',
     target: null,
     key: 2,
   },
