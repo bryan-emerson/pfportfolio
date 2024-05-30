@@ -55,20 +55,20 @@ function Stack() {
           <Typography variant="h4">Look what I can Do</Typography>
           <Box sx={{ display: "flex", flexDirection: "row", justifyContent: 'center' }}>
             <List sx={{ mr: { md: "8rem" }, pl: 0 }}>
-              <ListItem>React</ListItem>
-              <ListItem>Next.js</ListItem>
-              <ListItem>Javascript</ListItem>
-              <ListItem>CSS</ListItem>
-              <ListItem>HTML</ListItem>
-              <ListItem>MUI</ListItem>
+            <Typography variant="body1">React</Typography>
+  <Typography variant="body1">Next.js</Typography>
+  <Typography variant="body1">Javascript</Typography>
+  <Typography variant="body1">CSS</Typography>
+  <Typography variant="body1">HTML</Typography>
+  <Typography variant="body1">MUI</Typography>
             </List>
             <List sx={{ pl: 0 }}>
-              <ListItem>AXIOS</ListItem>
-              <ListItem>SWR</ListItem>
-              <ListItem>Recoil</ListItem>
-              <ListItem>Vercel</ListItem>
-              <ListItem>GIT</ListItem>
-              <ListItem>JIRA</ListItem>
+            <Typography variant="body1">AXIOS</Typography>
+  <Typography variant="body1">SWR</Typography>
+  <Typography variant="body1">Recoil</Typography>
+  <Typography variant="body1">Vercel</Typography>
+  <Typography variant="body1">GIT</Typography>
+  <Typography variant="body1">JIRA</Typography>
             </List>
           </Box>
         </Box>
