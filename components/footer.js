@@ -92,8 +92,8 @@ function Footer() {
         justifyContent: 'center',
         flex: { xs: '1 1 auto', md: '1 1 30%' }
       }}>
-        <Typography variant="h6">Think We'd Be A Great Fit?</Typography>
-        <Typography variant="h6">Let's Talk...</Typography>
+        <Typography variant="h6">Think We&apos;d Be A Great Fit?</Typography>
+        <Typography variant="h6">Let&apos;s Talk...</Typography>
       </Container>
       <Divider orientation="vertical" flexItem sx={{ bgcolor: '#FFFFFF', my: 2, display: { xs: 'none', md: 'block' } }} />
       <Container sx={{
