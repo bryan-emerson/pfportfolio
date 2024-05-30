@@ -38,13 +38,13 @@ function Hero({ imageSrc, children }) {
         color: 'white',
       }}
     >
-      <Grid container item xs={12} md={6} sx={{ pt: { xs: '55%', sm: '70%', md:'0%'}, }}>
-        {childrenArray.map((child, index) => (
-          <Grid item xs={12} key={index}>
-            {child}
-          </Grid>
-        ))}
-      </Grid>
+<Grid container item xs={12} md={6} sx={{ pt: { xs: '30vh', sm: '40vh', md:'0vh'}, }}>
+  {childrenArray.map((child, index) => (
+    <Grid item xs={12} key={index}>
+      {child}
+    </Grid>
+  ))}
+</Grid>
     </Box>
   );
 }
