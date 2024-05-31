@@ -49,7 +49,7 @@ function Blog() {
         foundation for being an effective software engineer.
       </Typography>
       <Typography variant="body1" paragraph>
-        When I'm not focused on work, you can find me outside hiking, biking,
+        When I&apos;m not focused on work, you can find me outside hiking, biking,
         surfing, or collecting stamps in my passport! I am also passionate about
         photography and design!
       </Typography>
