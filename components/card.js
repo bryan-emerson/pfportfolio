@@ -73,7 +73,7 @@ function Card(props) {
                 top: "50%",
                 left: "50%",
                 transform: "translate(-50%, -50%)",
-                width: { xs: "70%", md: 400 },
+                width: { xs: "70%", sm: "70%", md: "50%", lg: "45%" },
                 bgcolor: "background.paper",
                 border: "2px solid #000",
                 boxShadow: 24,
