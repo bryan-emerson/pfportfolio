@@ -36,6 +36,7 @@ const Slider = () => {
                 alt='portrait of Bryan'
                 width='1000'
                 height='1000'
+                layout="responsive"
                 src={item.src} />
       })}
     </div>
