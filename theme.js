@@ -56,6 +56,15 @@ let theme = createTheme({
         fontSize: '1.1rem',
       },
     },
+    body2: {
+      fontSize: '.8rem',
+      '@media (min-width:600px)': {
+        fontSize: '.9rem',
+      },
+      '@media (min-width:960px)': {
+        fontSize: '1rem',
+      },
+    },
     // Add more styles as needed
   },
 });
