@@ -14,7 +14,7 @@ function Hero({ imageSrc, children }) {
     </Box>,
     <Typography variant="h1" key="description" sx={{ width: { xs: '80%', sm: '100%'} }}>I&apos;m a Frontend Developer</Typography>,
     <Typography variant="body1" key="description" sx={{ width: { xs: '80%', sm: '100%'} }}>I strive to make bold, simple, user friendly solutions with React and javascript.</Typography>,
-    <JumpLinkButton href="#work" key="button">VIEW WORK</JumpLinkButton>,
+    <JumpLinkButton href="#work" key="button">View Work</JumpLinkButton>,
   ];
 
   return (

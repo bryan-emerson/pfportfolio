@@ -57,7 +57,7 @@ const Experience = () => {
             <Typography variant="h4">Experience</Typography>
             <Typography variant="body1">Practice Makes Perfect</Typography>
             <JumpLinkButton href='https://docs.google.com/document/d/12CYUXDHy1HpexCoWimkxkHj8vrJjY78ds-yaDTRAZXU/edit' key="button" target='_blank'>
-              VIEW RESUME
+              View Resume
             </JumpLinkButton>
           </Box>
         </Grid>
