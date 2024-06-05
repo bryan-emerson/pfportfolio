@@ -27,7 +27,7 @@ function Work() {
     <Box className={styles.work} id='work' sx={{ p: '2rem', backgroundColor: theme.palette.secondary.main }}>
       <Grid container spacing={2}>
         <Grid item xs={12} sx={{ }}>
-          <Typography variant="h2">Work</Typography>
+          <Typography variant="h2">Featured Work</Typography>
           <Typography variant="body1">A Brief History of (my) Time</Typography>
         </Grid>
         {allProjects}
