@@ -27,11 +27,10 @@ function Stack() {
         }}
       >
         <Image
-          src="/maya.png"
+          src="/cave.jpg"
           alt="description"
           width={imageSize}
-          height={imageSize}
-          layout="responsive"
+          height={imageSize/1.5}
         />
       </Grid>
       <Grid
