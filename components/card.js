@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Modal from "@mui/material/Modal";
 import Backdrop from "@mui/material/Backdrop";
 import Fade from "@mui/material/Fade";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
@@ -34,7 +34,7 @@ function Card(props) {
           layout="responsive"
           width={600}
           height={356}
-          disablegutters
+          disablegutters='true'
         />
         <Box
           sx={{

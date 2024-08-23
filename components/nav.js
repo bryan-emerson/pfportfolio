@@ -69,9 +69,11 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }} className={styles.name}>
-        Bryan Emerson
-      </Typography>
+      <Link href="/" sx={{ textDecoration: 'none', color: 'inherit' }}>
+        <Typography variant="h6" sx={{ my: 2 }} className={styles.name}>
+          Bryan Emerson
+        </Typography>
+      </Link>
       <Divider />
       <List>
         {navObjects.map((item) => (
@@ -102,13 +104,15 @@ function DrawerAppBar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
-            variant="h5"
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-          >
-            Bryan Emerson
-          </Typography>
+          <Link href="/" sx={{ textDecoration: 'none', color: 'inherit', flexGrow: 1 }}>
+            <Typography
+              variant="h5"
+              component="div"
+              sx={{ display: { xs: 'none', sm: 'block' } }}
+            >
+              Bryan Emerson
+            </Typography>
+          </Link>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navObjects.map((item) => (
               <Link key={item.key} href={item.url} component={Link} target={item.target}>
