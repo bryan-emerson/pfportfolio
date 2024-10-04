@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "@/styles/slider.module.css";
 import Image from "next/image";
-
+import Box from '@mui/material/Box';
 import Desert from "../public/desert.jpg";
 import Bike from "../public/bike.jpg";
 import Ski from "../public/ski.jpg";
@@ -33,14 +33,21 @@ const Slider = () => {
             className={styles.carouselItem}
             style={{ transform: `translate(-${currentIndex * 100}%)` }}
           >
-            <div className={styles.imageWrapper}>
+            <Box
+              sx={{
+                width: { xs: '300px', sm: '450px' }, // 300px for extra-small screens, 450px for small and larger screens
+                height: { xs: '200px', sm: '250px' }, // 200px for extra-small screens, 250px for small and larger screens
+                position: 'relative', // Required for next/image to work correctly
+              }}
+              className={styles.imageWrapper}
+            >
               <Image
                 alt="portrait of Bryan"
-                width="450"
-                height="250"
+                layout="fill" // Fill the parent Box
+                objectFit="cover" // Maintain aspect and cover the Box
                 src={item.src}
               />
-            </div>
+            </Box>
           </div>
         );
       })}
