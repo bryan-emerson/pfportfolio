@@ -6,10 +6,9 @@ import Desert from "../public/desert.jpg";
 import Bike from "../public/bike.jpg";
 import Ski from "../public/ski.jpg";
 import Cave from "../public/cave.jpg";
-import Size from "../public/size.jpg";
 
 const Slider = () => {
-  const data = [Desert, Bike, Ski, Cave, Size];
+  const data = [Desert, Bike, Ski, Cave];
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselInfiniteScroll = () => {
     if (currentIndex === data.length - 1) {
@@ -37,9 +36,8 @@ const Slider = () => {
             <div className={styles.imageWrapper}>
               <Image
                 alt="portrait of Bryan"
-                width="1000"
-                height="1000"
-                layout="responsive"
+                width="450"
+                height="250"
                 src={item.src}
               />
             </div>
@@ -52,4 +50,3 @@ const Slider = () => {
 
 export default Slider;
 
-//slider implemented next need to creat jump link for about section and start on work section

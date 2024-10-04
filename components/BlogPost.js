@@ -29,7 +29,7 @@ function BlogPost({ title, date, author, content, imageSrc, index }) {
         container
         alignItems="center"
       >
-        <Image src={imageSrc} alt={title} width={imageSize} height={imageSize * 0.6} />
+        <Image src={imageSrc} alt={title} width={imageSize} height={imageSize * 0.625} />
       </Grid>
       <Grid item xs={12} md={6} order={isSmallScreen ? 2 : index % 2 === 0 ? 2 : 1}>
         <Typography variant="h2" sx={{ marginBottom: '1rem' }}>
