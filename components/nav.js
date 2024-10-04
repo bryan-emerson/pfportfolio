@@ -57,6 +57,12 @@ let navObjects = [
     target: '_blank',
     key: 6,
   },
+  {
+    name: 'Contact',
+    url: 'mailto:Bryan.Emerson.Codes@gmail.com',
+    target: '_self',
+    key: 6,
+  },
 ]
 
 function DrawerAppBar(props) {
