@@ -22,16 +22,16 @@ const drawerWidth = 240;
 
 let navObjects = [
   {
-    name: 'About',
-    url: '/blog',
-    target: null,
-    key: 1,
-  },
-  {
     name: 'Work',
     url: '/#work',
     target: null,
     key: 2,
+  },
+  {
+    name: 'Blog',
+    url: '/blog',
+    target: null,
+    key: 1,
   },
   {
     name: 'LinkedIn',

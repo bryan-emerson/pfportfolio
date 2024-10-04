@@ -6,6 +6,7 @@ import Image from "next/legacy/image";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
+import { List, ListItem, ListItemText } from '@mui/material';
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -90,9 +91,19 @@ function Card(props) {
               >
                 {props.projObj.name}
               </Typography>
-              <Typography variant='body1' id="transition-modal-info" sx={{ mt: 2, fontSize: { xs: '0.7rem', sm: '0.875rem' }, overflowY: 'auto', maxHeight: '200px' }}>
-                {props.projObj.info}
-              </Typography>
+              <Typography
+      variant='body1'
+      id="transition-modal-info"
+      sx={{ mt: 2, fontSize: { xs: '0.7rem', sm: '0.875rem' }, overflowY: 'auto', maxHeight: '200px' }}
+    >
+                <List sx={{ listStyleType: 'disc', pl: 2 }}>
+                  {props.projObj.info.map((item, index) => (
+                    <ListItem key={index} sx={{ display: 'list-item', padding: 0 }}>
+                      <ListItemText primary={item} />
+                    </ListItem>
+                  ))}
+                </List>
+    </Typography>
               <Box
                 sx={{
                   display: "flex",

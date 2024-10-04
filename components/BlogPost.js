@@ -36,7 +36,7 @@ function BlogPost({ title, date, author, content, imageSrc, index }) {
           {title}
         </Typography>
         <Typography variant="subtitle1" sx={{ marginBottom: '1rem' }}>
-          {date} by {author}
+          {date}
         </Typography>
         <Typography variant="body1" sx={{ marginBottom: '2rem' }}>
           {content}

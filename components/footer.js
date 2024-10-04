@@ -3,16 +3,16 @@ import { useTheme } from '@mui/material/styles';
 
 let navObjects = [
   {
-    name: 'About',
-    url: '/',
-    target: null,
-    key: 1,
-  },
-  {
     name: 'Work',
-    url: '/blog',
+    url: '/#work',
     target: null,
     key: 2,
+  },
+  {
+    name: 'Blog',
+    url: '/blog',
+    target: null,
+    key: 1,
   },
   {
     name: 'LinkedIn',
