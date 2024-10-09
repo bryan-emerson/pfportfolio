@@ -6,6 +6,7 @@ import ListItem from "@mui/material/ListItem";
 import Image from "next/legacy/image";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import JumpLinkButton from "./JumpLinkButton";
 
 function Stack() {
   const theme = useTheme();
@@ -76,6 +77,7 @@ function Stack() {
               <Typography variant="body1">JIRA</Typography>
             </List>
           </Box>
+          <JumpLinkButton href="/blog">Read More</JumpLinkButton>
         </Box>
       </Grid>
     </Grid>

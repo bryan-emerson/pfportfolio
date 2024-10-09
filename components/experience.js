@@ -23,7 +23,7 @@ const Experience = () => {
       date: 'July 2023 - Current',
       responsibilities: [
         'Conducted ongoing improvement and product lifecycle maintenance of proprietary diet management app using Next.js, Vercel, React, Recoil, MUI, TypeScript, Axios, and RHF',
-        'Implemented ADA Section 508 accessibility compliance using Wave, Chrome Lighthouse, and WAG ARIA best practices',
+        'Implemented ADA Section 508 accessibility compliance using Wave, Chrome Lighthouse DevTools, WAI ARIA best practices, and WCAG 2.0 guidelines',
         'Implemented real-time data synchronization using React Recoil, SWR, and polling mechanisms to ensure the UI remained in sync with the backend',
       ],
     },
