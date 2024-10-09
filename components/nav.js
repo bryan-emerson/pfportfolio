@@ -47,7 +47,7 @@ let navObjects = [
   },
   {
     name: 'Resume',
-    url: 'https://docs.google.com/document/d/12CYUXDHy1HpexCoWimkxkHj8vrJjY78ds-yaDTRAZXU/edit',
+    url: '/resume.pdf',
     target: '_blank',
     key: 5,
   },
