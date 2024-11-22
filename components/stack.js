@@ -49,6 +49,7 @@ function Stack() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            pb: 2,
           }}
         >
           <Typography variant="body1">Stack / Skills</Typography>
